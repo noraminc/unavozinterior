@@ -17,7 +17,7 @@ body {
   background-color: var(--clr-dark);
   font-family: var(--font-main);
   font-weight: 200;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5;
   color: var(--clr-accent);
 }
@@ -31,11 +31,11 @@ header {
   padding-bottom: 3em;
   align-items: center;
   background-color: var(--clr-dark);
-  font-size: 1.5rem;
+  font-size: 1.2em;
   line-height: 2;
   text-align: center;
   text-transform: uppercase;
-  height: 2em;
+  /* height: 2em; */
   width: 100%;
   z-index: 999;
 }
@@ -126,6 +126,7 @@ nav a {
 
 /* SECTIONS */
 .section {
+  display: flex;
   padding: 1em;
 }
 
@@ -146,7 +147,7 @@ nav a {
 
 /* BIOS */
 .section-bios {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
 }
 .bio-card {
@@ -160,4 +161,13 @@ nav a {
 }
 .bio-card span {
   font-weight: 400;
+}
+
+/* GALERIA */
+.section-galeria {
+  flex-wrap: wrap;
+}
+.section-galeria img {
+  width: 100%;
+  margin: .5em 0;
 }
