@@ -21,6 +21,9 @@ body {
   line-height: 1.5;
   color: var(--clr-accent);
 }
+a {
+  cursor: pointer;
+}
 
 /* HEADER STYLES */
 header {
@@ -231,6 +234,10 @@ height: 100%;
     padding: 0;
     /* height: 100vh; */
   }
+  /* VIDEO */
+  .section-video {
+    padding: 5em;
+  }
   /* STATEMENT */
   .statement-images {
     display: flex;
@@ -251,7 +258,7 @@ height: 100%;
   /* BIOS */
   .bio-card {
     width: 25%;
-    padding: 3em;
+    padding: 2em;
   }
   /* GALERIA */
   .section-galeria {
