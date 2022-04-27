@@ -131,32 +131,28 @@ nav a {
 }
 
 /* STATEMENT */
-.statement-images {
-  margin: 1em;
-}
 .statement-images img {
-  margin: 1em;
+  margin: 1.5em .5em;
 }
 .img-fm {
-  width: 50%;
-  /* object-fit: cover; */
+  width: 55%;
 }
 .img-impulso {
-  width: 20%;
+  width: 25%;
 }
 
 /* BIOS */
 .section-bios {
-  /* display: flex; */
   flex-wrap: wrap;
 }
 .bio-card {
-  width: 50%;
+  width: 100%;
   padding: .5em;
   margin-bottom: 2em;
 }
 .bio-card img {
-  width: 90%;
+  /* border: 1px solid white; */
+  width: 100%;
   margin-bottom: 1em;
 }
 .bio-card span {
