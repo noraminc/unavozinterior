@@ -39,14 +39,7 @@ header {
   width: 100%;
   z-index: 999;
 }
-header h1 {
-  font-weight: 400;
-  display: block;
-  position: relative;
-  margin-right: 1em;
-}
 nav {
-  /* display: none; */
   background-color: var(--clr-dark);
   position: absolute;
   text-align: right;
@@ -56,6 +49,12 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+}
+nav h1 {
+  font-weight: 400;
+  display: block;
+  position: relative;
+  margin-right: 1em;
 }
 nav ul {
   margin-right: 1em;
@@ -166,4 +165,64 @@ nav a {
 .section-galeria img {
   width: 100%;
   margin: .5em 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 800px) {
+  /* MAIN */
+  body {
+    font-size: 1.5em;
+  }
+  /* HEADER */
+  header {
+    padding-bottom: 0;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
+  nav {
+    display: flex;
+    transform: scale(1, 1);
+  }
+  nav h1,
+  nav a {
+    opacity: 1;
+  }
+  nav h1 {
+    margin-left: 1em;
+  }
+  nav ul {
+    display: flex;
+    margin-left: auto;
+  }
+  nav li {
+    padding-left: 1em;
+  }
+  /* HERO */
+  .hero-img {
+    height: 100vh;
+  }
+  /* SECTIONS */
+  .section {
+    margin: 1em 5em;
+  }
+  /* STATEMENT */
+  .statement-images {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .statement-images img {
+    margin: 1.5em;
+  }
+  .img-fm {
+    width: 500px;
+    height: 100%;
+  }
+  .img-impulso {
+    width: 200px;
+    height: 100%;
+  }
 }
