@@ -143,3 +143,21 @@ nav a {
 .img-impulso {
   width: 20%;
 }
+
+/* BIOS */
+.section-bios {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bio-card {
+  width: 50%;
+  padding: .5em;
+  margin-bottom: 2em;
+}
+.bio-card img {
+  width: 90%;
+  margin-bottom: 1em;
+}
+.bio-card span {
+  font-weight: 400;
+}
