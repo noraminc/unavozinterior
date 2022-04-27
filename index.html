@@ -2,44 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Una Voz Interior</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
 
-    <!------------------------- HEADER ------------------------->
+    <!------------------- HEADER ------------------->
     <header>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
       <nav>
         <h1>Una Voz Interior</h1>
         <ul>
-          <li>Statement</li>
-          <li>Bios</li>
-          <li>Galería</li>
+          <li>
+            <a href="#">Statement</a>
+          </li>
+          <li>
+            <a href="#">Bios</a>
+          </li>
+          <li>
+            <a href="#">Galería</a>
+          </li>
         </ul>
       </nav>
-      <div class="header-img">
-        <img src="imagenes/galeria/imagen_principal.jpg" alt="">
-      </div>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
     </header>
 
-    <!------------------------- STATEMENT ------------------------->
+    <!------------------- HEADER ------------------->
+    <div class="hero-img">
+      <img src="imagenes/galeria/imagen_principal.jpg" alt="">
+    </div>
+
+    <!------------------- STATEMENT ------------------->
     <div class="section section-statement">
       <div class="statement-text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin neque leo, malesuada id dolor nec, tincidunt egestas dui. Sed semper eu nibh ac tincidunt. Curabitur nunc felis, finibus ut erat eget, facilisis efficitur nulla. Nullam non tellus mollis, semper ex non, ornare lacus. Ut suscipit felis et lectus dignissim efficitur. Vivamus pulvinar, purus quis laoreet malesuada, elit dolor pharetra dolor, vel aliquet mi elit nec dui. Maecenas ex nunc, hendrerit at neque id, facilisis suscipit dolor.
-
-          Este proyecto cuenta con el apoyo de:
+          Una voz virtual es una pieza audiovisual inmersiva de realidad virtual con sonido binaural. La idea fundadora de esta propuesta es la de imaginar y desarrollar un experiencia que ubique al espectador en la convergencia de cuatro conjuntos, que a nuestro entender, constituyen la experiencia musical contemporánea: el evento sonoro, el espacio de escucha, las fuentes sonoras y la visualización del sonido.<br>
+          El desarrollo espacial dialoga con la construcción sonora: elementos volátiles, arcos lumminosos y cadenas montañosas giran alrededor del espectador en sincro con voces, coros y susurros. La organización concéntrica de elementos permite fortalecer el concepto inmersivo de la obra, mientras que la iluminación ambienta un clima lúgubre.
+          De manera individual o conjunta, los integrantes de este equipo han trabajado en proyectos que planteaban la misma búsqueda: espacios visibles, sonoros y habitables en los cuales la audiencia pudiera sumarse a una performance musical.<br>
+          Una voz interior refleja la búsqueda de una espacialidad sonora íntima, distópica y fantástica.
+          <br><br>
+          Este proyecto cuenta con el apoyo de
         </p>
         <div class="statement-images">
-          <img src="imagenes/logo_fma_bn.png" alt="Logo Fondo Metropolitano">
-          <img src="imagenes/logo_impulsocultural.png" alt="Logo Impulso Cultural">
+          <!-- <img src="imagenes/logo_fma_bn.png" alt="Logo Fondo Metropolitano">
+          <img src="imagenes/logo_impulsocultural.png" alt="Logo Impulso Cultural"> -->
         </div>
       </div>
     </div>
 
-    <!------------------------- BIOS ------------------------->
-    <div class="section section-bios">
+    <!------------------- BIOS ------------------->
+    <!-- <div class="section section-bios">
       <div class="bio-card">
         <img src="imagenes/stencil_nach.png" alt="">
         <p>
@@ -73,13 +99,13 @@
         <p>
           Bárbara Togander.<br>
           Compositora, improvisadora y artista vocal.<br>
-          Incursiona en free, la música experimental y la improvisación libre, donde profundiza las posibilidades sonoras de la voz, la electrónica y la bandeja giradiscos. 
+          Incursiona en free, la música experimental y la improvisación libre, donde profundiza las posibilidades sonoras de la voz, la electrónica y la bandeja giradiscos.
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <!------------------------- GALERIA ------------------------->
-    <div class="section section-galeria">
+    <!------------------- GALERIA ------------------->
+    <!-- <div class="section section-galeria">
       <div class="galeria-top">
         <img src="imagenes/galeria/03.jpg" alt="">
         <img src="imagenes/galeria/04.jpg" alt="">
@@ -89,7 +115,7 @@
         <img src="imagenes/galeria/01.jpg" alt="">
         <img src="imagenes/galeria/02.jpg" alt="">
       </div>
-    </div>
+    </div> -->
 
   </body>
 </html>
