@@ -31,7 +31,6 @@ header {
   display: flex;
   position: fixed;
   top: 0;
-  padding-bottom: 3em;
   align-items: center;
   background-color: var(--clr-dark);
   font-size: 1.2em;
@@ -42,27 +41,30 @@ header {
   width: 100%;
   z-index: 999;
 }
+header h1 {
+  /* border: 1px solid red; */
+  font-weight: 400;
+  display: block;
+  position: relative;
+  margin-left: 1em;
+}
 nav {
+  /* border: 1px solid red; */
   background-color: var(--clr-dark);
   position: absolute;
   text-align: right;
   top: 100%;
   width: 100%;
   margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
-nav h1 {
-  font-weight: 400;
-  display: block;
-  position: relative;
-  margin-right: 1em;
-}
 nav ul {
   margin-right: 1em;
 }
-nav h1,
 nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -95,7 +97,7 @@ nav a {
   position: relative;
   background: var(--clr-accent);
   height: .2em;
-  width: 2em;
+  width: 1.5em;
   border-radius: 2px;
 }
 .hamburger::before,
@@ -104,10 +106,10 @@ nav a {
   position: absolute;
 }
 .hamburger::before {
-  bottom: .5em;
+  bottom: .4em;
 }
 .hamburger::after {
-  top: .5em;
+  top: .4em;
 }
 
 /* HEADER */
@@ -201,20 +203,23 @@ height: 100%;
   /* HEADER */
   header {
     padding-bottom: 0;
+    justify-content: space-between;
+  }
+  header h1 {
+    margin-left: 3em;
   }
   .nav-toggle-label {
     display: none;
   }
   nav {
     display: flex;
+    position: relative;
+    width: auto;
+    padding: 0;
     transform: scale(1, 1);
   }
-  nav h1,
   nav a {
     opacity: 1;
-  }
-  nav h1 {
-    margin-left: 3em;
   }
   nav ul {
     display: flex;
@@ -232,7 +237,7 @@ height: 100%;
   .section {
     margin: 2em 3em 0 3em;
     padding: 0;
-    /* height: 100vh; */
+    padding-top: 5rem;
   }
   /* VIDEO */
   .section-video {
@@ -241,7 +246,6 @@ height: 100%;
   /* STATEMENT */
   .statement-images {
     display: flex;
-    /* justify-content: center; */
     align-items: baseline;
   }
   .statement-images img {
@@ -262,6 +266,7 @@ height: 100%;
   }
   /* GALERIA */
   .section-galeria {
+    padding-top: 0;
     margin-bottom: 3em;
   }
   .section-galeria img {
@@ -269,7 +274,6 @@ height: 100%;
   }
   .galeria-top,
   .galeria-bottom {
-    /* border: 1px solid white; */
     display: flex;
   }
   .galeria-top img {
