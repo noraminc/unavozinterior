@@ -65,6 +65,10 @@ nav {
 nav ul {
   margin-right: 1em;
 }
+header li:hover,
+header h1:hover {
+  scale: 1.05;
+}
 nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -149,8 +153,6 @@ nav a {
 .section-video {
   margin-top: 2em;
   padding: .5em;
-  /* width: 100%; */
-  /* height: 50vh; */
 }
 .video-wrapper {
 position: relative;
@@ -175,9 +177,12 @@ height: 100%;
   margin-bottom: 2em;
 }
 .bio-card img {
-  /* border: 1px solid white; */
   width: 100%;
   margin-bottom: 1em;
+  transition: scale .5s ease-in-out;
+}
+.bio-card img:hover {
+  scale: 1.05;
 }
 .bio-card span {
   font-weight: 400;
@@ -190,6 +195,10 @@ height: 100%;
 .section-galeria img {
   width: 100%;
   margin: .5em 0;
+  transition: scale .5s ease-in-out;
+}
+.section-galeria img:hover {
+  scale: 1.05;
 }
 
 
